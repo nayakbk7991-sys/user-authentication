@@ -1,0 +1,46 @@
+const validatePassword = (password) => {
+
+    if (
+        typeof password !== "string"
+    ) {
+
+        return {
+            valid: false,
+            message:
+                "Password is required."
+        };
+
+    }
+
+    if (
+        password.length < 8
+    ) {
+
+        return {
+            valid: false,
+            message:
+                "Password must contain at least 8 characters."
+        };
+
+    }
+
+    if (
+        password.length > 128
+    ) {
+
+        return {
+            valid: false,
+            message:
+                "Password must not exceed 128 characters."
+        };
+
+    }
+
+    return {
+        valid: true,
+        message: ""
+    };
+
+};
+
+module.exports = validatePassword;

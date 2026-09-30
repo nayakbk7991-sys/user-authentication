@@ -1,0 +1,126 @@
+.dashboard-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background: #f5f7fa;
+}
+
+.dashboard-card {
+    width: 100%;
+    max-width: 850px;
+    padding: 40px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.07);
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.dashboard-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.dashboard-header h1 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 30px;
+}
+
+.dashboard-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+.logout-button {
+    min-width: 90px;
+    height: 42px;
+    padding: 0 16px;
+    border: none;
+    border-radius: 8px;
+    background: #111827;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background: #1f2937;
+}
+
+.dashboard-user {
+    margin-top: 28px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dashboard-user-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.dashboard-user-row:last-child {
+    border-bottom: none;
+}
+
+.dashboard-user-row span {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.dashboard-user-row strong {
+    color: #111827;
+    font-size: 14px;
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+
+    .dashboard-page {
+        padding: 16px;
+    }
+
+    .dashboard-card {
+        padding: 26px 20px;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+    }
+
+    .logout-button {
+        width: 100%;
+    }
+
+    .dashboard-user-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .dashboard-user-row strong {
+        text-align: left;
+    }
+
+}
